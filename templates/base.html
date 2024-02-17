@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flask Survey</title>
+    <title>{% block title %}TITLE HERE{% endblock %}</title>
 </head>
 <body>
-    {% for msg in get_flashed_messages()%}
-        <p>{{ msg }}</p>
-    {% endfor %}
-    {% block content %}
-    {% endblock %}
+    <header>Survey.ly</header>
+<main>
+    {% block content %}CONTENT HERE{% endblock %}
+</main>
+<footer>Copyright by Survey.ly</footer>
 </body>
 </html>
